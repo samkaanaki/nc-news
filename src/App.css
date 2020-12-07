@@ -1,24 +1,39 @@
 * {
   margin: 0;
   padding: 0;
+  background-colour: white;
 }
 
-#logo-header {
+#header-logo {
   height: 50px;
   width: 50px;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .header-left {
   display: flex;
-  margin: 1rem;
+  margin: 0.5rem;
+}
+
+.header-right {
+  display: flex;
 }
 
 h1 {
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
-#interwebs {
+#waste-time {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+
+#welcome-user {
+  margin-top: 1rem;
+  margin-left: 60rem;
+}
+
+#user-logo {
+  height: 5px;
 }
