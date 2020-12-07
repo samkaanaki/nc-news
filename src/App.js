@@ -16,7 +16,7 @@ function App() {
         </div>
 
         <div className="header-right">
-          <p id="welcome-user">Welcome back samaki</p>
+          <p id="welcome-user">Welcome back samaki_69420</p>
           {/* <img
             src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c531.png"
             alt="user logo"

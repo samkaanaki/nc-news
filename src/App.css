@@ -39,3 +39,11 @@ h1 {
 #user-logo {
   height: 5px;
 }
+
+.article-card {
+  margin: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
