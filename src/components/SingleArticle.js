@@ -39,9 +39,9 @@ class SingleArticle extends React.Component {
         <>
           <div className="single-article-container">
             <div className="votes">
-              <p>⬆️</p>
-              <p>{votes}</p>
-              <p>⬇️</p>
+              <p id="vote-up">⬆️</p>
+              <p id="current-votes">{votes}</p>
+              <p id="vote-down">⬇️</p>
             </div>
             <h3>{title}</h3>
 
