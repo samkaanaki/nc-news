@@ -58,3 +58,19 @@ li {
 #post-button {
   width: 2.5rem;
 }
+
+.single-article-container {
+  margin: 2rem;
+}
+
+.comment-container {
+  margin: 2rem;
+}
+
+.article-comments-container {
+  margin: 2rem;
+}
+
+.comment-card {
+  margin: 2rem;
+}

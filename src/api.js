@@ -14,7 +14,16 @@ export const getSingleArticle = (article_id) => {
       `https://nc-news-for-frontend.herokuapp.com/api/articles/${article_id}`
     )
     .then(({ data }) => {
-      console.log(data);
+      return data;
+    });
+};
+
+export const getArticleComments = (article_id) => {
+  return axios
+    .get(
+      `https://nc-news-for-frontend.herokuapp.com/api/articles/${article_id}/comments`
+    )
+    .then(({ data }) => {
       return data;
     });
 };

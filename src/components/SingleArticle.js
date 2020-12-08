@@ -1,6 +1,7 @@
 import React from 'react';
 import { getSingleArticle } from '../api';
 import Comment from '../components/Comment';
+import ArticleComments from '../components/ArticleComments';
 
 class SingleArticle extends React.Component {
   state = {
@@ -25,15 +26,17 @@ class SingleArticle extends React.Component {
         votes,
         comment_count,
         body,
-        created_at
+        created_at,
+        article_id
       } = this.state.article.article;
+
       return (
         <>
           <div className="single-article-container">
             <div className="single-article-content">
               <h3>{title}</h3>
               <p>
-                in spr/{topic} by u/{author} on {created_at}
+                in <u>spr/{topic}</u> by <u>u/{author}</u> on {created_at}
               </p>
               <br></br>
               <p>{body}</p>
@@ -45,6 +48,8 @@ class SingleArticle extends React.Component {
           </div>
           <br></br>
           <Comment />
+
+          <ArticleComments article_id={article_id} />
         </>
       );
     }

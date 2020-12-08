@@ -3,7 +3,7 @@ import { Link } from '@reach/router';
 
 const ArticleCard = (props) => {
   const { title, author, comment_count, topic, votes, article_id } = props;
-  console.log(props);
+
   return (
     <div className="article-card">
       <li>

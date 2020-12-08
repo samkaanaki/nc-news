@@ -13,7 +13,7 @@ class Comment extends React.Component {
               required
               type="search"
               id="comment-input"
-              placeholder="What are your thoughts?"
+              placeholder="Let OP know how much you hate them here"
             />
           </form>
           <button id="post-button">Post</button>
