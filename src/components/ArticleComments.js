@@ -16,7 +16,12 @@ class ArticleComments extends React.Component {
 
   render() {
     if (this.state.isLoading) {
-      return <h2>Loading comments...</h2>;
+      return (
+        <>
+          <div class="loader"></div>
+          <h2>Loading comments...</h2>
+        </>
+      );
     } else {
       return (
         <ul className="article-comments-container">

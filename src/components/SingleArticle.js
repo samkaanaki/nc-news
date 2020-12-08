@@ -17,7 +17,12 @@ class SingleArticle extends React.Component {
 
   render() {
     if (this.state.isLoading) {
-      return <h2>Loading article...</h2>;
+      return (
+        <>
+          <div class="loader"></div>
+          <h2>Loading article...</h2>
+        </>
+      );
     } else {
       const {
         title,
@@ -33,18 +38,16 @@ class SingleArticle extends React.Component {
       return (
         <>
           <div className="single-article-container">
-            <div className="single-article-content">
-              <h3>{title}</h3>
-              <p>
-                in <u>spr/{topic}</u> by <u>u/{author}</u> on {created_at}
-              </p>
-              <br></br>
-              <p>{body}</p>
-              <br></br>
-              <p>
-                {votes} votes || {comment_count} comments
-              </p>
-            </div>
+            <h3>{title}</h3>
+            <p>
+              in <u>spr/{topic}</u> by <u>u/{author}</u> on {created_at}
+            </p>
+            <br></br>
+            <p>{body}</p>
+            <br></br>
+            <p>
+              {votes} votes || {comment_count} comments
+            </p>
           </div>
           <br></br>
           <Comment />
