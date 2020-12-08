@@ -28,7 +28,7 @@ As a user, I should be able to...
 
 ✅ view a list of all articles
 view a page for each topic with a list of related articles.
-view an individual article.
+✅view an individual article.
 view an individual article's comments.
 sort articles by:
 date created

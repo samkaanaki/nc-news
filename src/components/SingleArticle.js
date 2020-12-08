@@ -29,10 +29,10 @@ class SingleArticle extends React.Component {
         <div className="single-article-container">
           <div className="single-article-content">
             <h3>{title}</h3>
-            <p>{topic}</p>
-            <p>{author}</p>
-            <p>{votes}</p>
-            <p>{comment_count}</p>
+            <p>spr/{topic}</p>
+            <p>by {author}</p>
+            <p>{votes} votes</p>
+            <p>{comment_count} comments</p>
             <p>{body}</p>
           </div>
         </div>
