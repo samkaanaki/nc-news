@@ -1,7 +1,9 @@
 import React from 'react';
+import { postComment } from '../api';
 
 class Comment extends React.Component {
   state = {
+    success: '',
     comment: ''
   };
   render() {
@@ -11,15 +13,22 @@ class Comment extends React.Component {
           <h3>Join the conversation</h3>
           <p>Commenting as samaki_8</p>
           <br></br>
-          <form>
+          <form onSubmit={postComment}>
             <input
               required
-              type="search"
+              type="text"
               id="comment-input"
               placeholder="Let OP know how much you hate them here"
             />
+            <button id="post-button" type="submit">
+              Post
+            </button>
           </form>
-          <button id="post-button">Post</button>
+          {this.state.success === 'yes' ? (
+            <p>Successfully added ✅</p>
+          ) : this.state.success === 'no' ? (
+            <p>Invalid request ❌</p>
+          ) : null}
         </div>
       </>
     );
