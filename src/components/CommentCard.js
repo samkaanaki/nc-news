@@ -4,7 +4,7 @@ const CommentCard = (props) => {
   const { author, body, created_at, votes } = props;
   return (
     <>
-      <div className="comment-card"></div>
+      <div id="comment-card"></div>
       <p>
         <u>u/{author}</u> at {created_at}
       </p>

@@ -99,6 +99,10 @@ li {
   padding: 1rem;
 }
 
+.votes {
+  display: flex;
+}
+
 .comment-container {
   margin: 2rem;
   width: 50%;
@@ -115,6 +119,6 @@ li {
   padding: 1rem;
 }
 
-.comment-card {
-  margin: 2rem;
+#comment-card {
+  padding: 1rem;
 }

@@ -38,7 +38,13 @@ class SingleArticle extends React.Component {
       return (
         <>
           <div className="single-article-container">
+            <div className="votes">
+              <p>⬆️</p>
+              <p>{votes}</p>
+              <p>⬇️</p>
+            </div>
             <h3>{title}</h3>
+
             <p>
               in <u>spr/{topic}</u> by <u>u/{author}</u> on {created_at}
             </p>

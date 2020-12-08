@@ -3,6 +3,7 @@ import AllArticles from './components/AllArticles';
 import Header from './components/Header';
 import SingleArticle from './components/SingleArticle';
 import { Router } from '@reach/router';
+import Profile from './components/Profile';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <AllArticles path="/" />
         <SingleArticle path="/articles/:article_id" />
+        <Profile path="/profile" />
       </Router>
     </div>
   );

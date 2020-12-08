@@ -25,16 +25,16 @@ const Header = () => {
             </select>
           </div>
           <div className="header-user-info">
-            {' '}
             <p id="welcome-user">samaki_8</p>
             <p id="karma">💥 8 karma</p>
           </div>
-
-          <img
-            src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c531.png"
-            alt="user logo"
-            id="user-logo"
-          />
+          <Link to="/profile">
+            <img
+              src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c531.png"
+              alt="user logo"
+              id="user-logo"
+            />
+          </Link>
         </div>
 
         <hr />
