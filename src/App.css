@@ -22,12 +22,14 @@ hr {
 }
 
 header {
-  background-color: #afdedc;
+  background-color: #809bce;
+
+  margin: 0;
 }
 
 .header-left {
   display: flex;
-  margin: 0.5rem;
+
   background-color: #afdedc;
 }
 

@@ -3,7 +3,7 @@ import { Link } from '@reach/router';
 
 const Header = () => {
   return (
-    <div>
+    <div className="full-header">
       <header className="header">
         <div className="header-left">
           <Link to={'/'}>
@@ -15,7 +15,7 @@ const Header = () => {
           </Link>
           <h1>spread-it</h1>
           <hr></hr>
-          <p id="waste-time">a massive waste of time</p>
+          <p id="waste-time">waste your life away</p>
           <hr></hr>
           <div className="topics-filter">
             <select>
