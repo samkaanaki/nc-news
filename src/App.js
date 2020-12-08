@@ -13,6 +13,14 @@ function App() {
           />{' '}
           <h1>spread-it</h1>
           <p id="waste-time">a massive waste of time</p>
+          <div className="topics-filter">
+            <select>
+              <option>All</option>
+              <option>Coding</option>
+              <option>Cooking</option>
+              <option>Football</option>
+            </select>
+          </div>
           <p id="welcome-user">Welcome back samaki_69420</p>
           <img
             src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c531.png"
