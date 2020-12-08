@@ -26,7 +26,7 @@ Before moving onto the 'if time' and 'extra credit' sections of this readme, fol
 
 As a user, I should be able to...
 
-view a list of all articles
+✅ view a list of all articles
 view a page for each topic with a list of related articles.
 view an individual article.
 view an individual article's comments.
