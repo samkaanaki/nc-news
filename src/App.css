@@ -54,3 +54,7 @@ li {
   height: 5rem;
   margin-top: 1px;
 }
+
+#post-button {
+  width: 2.5rem;
+}

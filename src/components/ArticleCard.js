@@ -1,7 +1,5 @@
 import React from 'react';
 import { Link } from '@reach/router';
-import { Router } from '@reach/router';
-import SingleArticle from '../components/SingleArticle';
 
 const ArticleCard = (props) => {
   const { title, author, comment_count, topic, votes, article_id } = props;

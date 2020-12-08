@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from '@reach/router';
+
 import { getArticles } from '../api';
-import { Router } from '@reach/router';
+
 import ArticleCard from './ArticleCard';
 
 class ArticlesList extends React.Component {

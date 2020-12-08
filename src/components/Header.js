@@ -1,15 +1,18 @@
 import React from 'react';
+import { Link } from '@reach/router';
 
 const Header = () => {
   return (
     <div>
       <header className="header">
         <div className="header-left">
-          <img
-            src="https://i.imgur.com/ws2kAA0.png"
-            alt="logo"
-            id="header-logo"
-          />{' '}
+          <Link to={'/'}>
+            <img
+              src="https://i.imgur.com/ws2kAA0.png"
+              alt="logo"
+              id="header-logo"
+            />
+          </Link>
           <h1>spread-it</h1>
           <p id="waste-time">a massive waste of time</p>
           <div className="topics-filter">
