@@ -48,3 +48,9 @@ h1 {
 li {
   list-style-type: none;
 }
+
+#comment-input {
+  width: 25rem;
+  height: 5rem;
+  margin-top: 1px;
+}

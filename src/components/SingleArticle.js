@@ -1,5 +1,6 @@
 import React from 'react';
 import { getSingleArticle } from '../api';
+import Comment from '../components/Comment';
 
 class SingleArticle extends React.Component {
   state = {
@@ -23,19 +24,28 @@ class SingleArticle extends React.Component {
         author,
         votes,
         comment_count,
-        body
+        body,
+        created_at
       } = this.state.article.article;
       return (
-        <div className="single-article-container">
-          <div className="single-article-content">
-            <h3>{title}</h3>
-            <p>spr/{topic}</p>
-            <p>by {author}</p>
-            <p>{votes} votes</p>
-            <p>{comment_count} comments</p>
-            <p>{body}</p>
+        <>
+          <div className="single-article-container">
+            <div className="single-article-content">
+              <h3>{title}</h3>
+              <p>
+                in spr/{topic} by u/{author} on {created_at}
+              </p>
+              <br></br>
+              <p>{body}</p>
+              <br></br>
+              <p>
+                {votes} votes || {comment_count} comments
+              </p>
+            </div>
           </div>
-        </div>
+          <br></br>
+          <Comment />
+        </>
       );
     }
   }
