@@ -34,6 +34,11 @@ h1 {
 #welcome-user {
   margin-top: 1rem;
   margin-left: 60rem;
+  text-align: right;
+}
+
+#karma {
+  margin-left: 60rem;
 }
 
 #user-logo {

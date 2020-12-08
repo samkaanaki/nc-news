@@ -24,7 +24,12 @@ const Header = () => {
               <option>Football</option>
             </select>
           </div>
-          <p id="welcome-user">Welcome back samaki_8</p>
+          <div className="header-user-info">
+            {' '}
+            <p id="welcome-user">samaki_8</p>
+            <p id="karma">💥 8 karma</p>
+          </div>
+
           <img
             src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c531.png"
             alt="user logo"
