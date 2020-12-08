@@ -43,6 +43,7 @@ class SingleArticle extends React.Component {
               <p id="current-votes">{votes}</p>
               <p id="vote-down">⬇️</p>
             </div>
+            <br></br>
             <h3>{title}</h3>
 
             <p>

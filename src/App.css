@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  background-color: white;
+  font-family: verdana, arial, helvetica, sans-serif;
+}
+body {
+  background-color: #c4d7f2;
 }
 
 #header-logo {
@@ -12,17 +17,24 @@
   font-size: 3rem;
 }
 
+header {
+  background-color: #afdedc;
+}
+
 .header-left {
   display: flex;
   margin: 0.5rem;
+  background-color: #afdedc;
 }
 
 .header-right {
   display: flex;
+  background-color: #afdedc;
 }
 
 h1 {
   margin: 0.5rem;
+  font-family: 'Varela Round', verdana, arial, helvetica, sans-serif;
 }
 
 #waste-time {
@@ -70,6 +82,7 @@ h1 {
   padding: 1rem;
   border-radius: 0.25rem;
   width: 50rem;
+  background-color: #afdedc;
 }
 
 li {
@@ -97,11 +110,11 @@ li {
   border: solid black 1px;
   border-radius: 0.25rem;
   padding: 1rem;
+  background-color: #afdedc;
 }
 
 .votes {
   display: flex;
-  text-align: right;
 }
 
 #vote-up {
@@ -118,6 +131,7 @@ li {
   border: solid black 1px;
   border-radius: 0.25rem;
   padding: 1rem;
+  background-color: #afdedc;
 }
 
 .article-comments-container {
@@ -126,8 +140,10 @@ li {
   border: solid black 1px;
   border-radius: 0.25rem;
   padding: 1rem;
+  background-color: #afdedc;
 }
 
 #comment-card {
   padding: 1rem;
+  background-color: #afdedc;
 }
