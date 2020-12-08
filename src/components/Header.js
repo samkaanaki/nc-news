@@ -14,7 +14,9 @@ const Header = () => {
             />
           </Link>
           <h1>spread-it</h1>
+          <hr></hr>
           <p id="waste-time">a massive waste of time</p>
+          <hr></hr>
           <div className="topics-filter">
             <select>
               <option>Choose a topic</option>
