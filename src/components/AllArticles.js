@@ -12,7 +12,6 @@ class ArticlesList extends React.Component {
 
   componentDidMount() {
     getArticles().then((articles) => {
-      console.log(articles);
       this.setState({ articles, isLoading: false });
     });
   }
@@ -25,6 +24,7 @@ class ArticlesList extends React.Component {
     }
     return (
       <div className="all-articles">
+        <h2>All articles</h2>
         <ul>
           {articles.map((article) => {
             return <ArticleCard key={article.article_id} {...article} />;

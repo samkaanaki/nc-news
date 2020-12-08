@@ -13,6 +13,9 @@ const ArticleCard = (props) => {
         <p>votes: {votes}</p>
         <p>comments: {comment_count}</p>
       </li>
+      <Link to={`/articles/:article_id`}>
+        <button>See article</button>
+      </Link>
     </div>
   );
 };
