@@ -17,7 +17,7 @@ class SingleArticle extends React.Component {
 
   render() {
     if (this.state.isLoading) {
-      return <p>Loading article...</p>;
+      return <h2>Loading article...</h2>;
     } else {
       const {
         title,

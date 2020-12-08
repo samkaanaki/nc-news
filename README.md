@@ -26,43 +26,43 @@ Before moving onto the 'if time' and 'extra credit' sections of this readme, fol
 
 As a user, I should be able to...
 
-✅ view a list of all articles
-view a page for each topic with a list of related articles.
-✅view an individual article.
-view an individual article's comments.
-sort articles by:
-date created
-comment_count
-votes
-post a new comment to an existing article (as a default logged in user. e.g. 'jessjelly').
-delete my own comments (as a default logged in user. e.g. 'jessjelly').
-vote on an article and immediately see the change.
-vote on a comment and immediately see the change.
-Error-handling: As a user, I should...
+✅ view a list of all articles <br>
+view a page for each topic with a list of related articles.<br>
+✅ view an individual article.<br>
+✅ view an individual article's comments.<br>
+sort articles by:<br>
+date created<br>
+comment_count<br>
+votes<br>
+post a new comment to an existing article (as a default logged in user. e.g. 'jessjelly').<br>
+delete my own comments (as a default logged in user. e.g. 'jessjelly').<br>
+vote on an article and immediately see the change.<br>
+vote on a comment and immediately see the change.<br>
+Error-handling: As a user, I should...<br>
 
-see a 404 error if I go on a non-existent path/a path for a non-existent article/topic.
-see a 400 error if I go on a invalid article ID.
-not be allowed to post a comment if I have not filled in all of the form boxes.
-As a hiring partner, I should be able to...
+see a 404 error if I go on a non-existent path/a path for a non-existent article/topic.<br>
+see a 400 error if I go on a invalid article ID.<br>
+not be allowed to post a comment if I have not filled in all of the form boxes.<br>
+As a hiring partner, I should be able to...<br>
 
-use the site on my mobile without sacrificing style or functionality (as I may not have my laptop nearby).
-follow the readme instructions to easily run the project locally.
-find a link to the hosted version of the project in the readme. (use a placeholder if not yet hosted!)
-find a link to the back-end repository of the project in the readme.
-find a link to the hosted version of the back-end project in the readme.
-If time, and if you have implemented it in your back-end API...
-As a user, I should be able to...
+use the site on my mobile without sacrificing style or functionality (as I may not have my laptop nearby).<br>
+follow the readme instructions to easily run the project locally.<br>
+find a link to the hosted version of the project in the readme. (use a placeholder if not yet hosted!)<br>
+find a link to the back-end repository of the project in the readme.<br>
+find a link to the hosted version of the back-end project in the readme.<br>
+If time, and if you have implemented it in your back-end API...<br>
+As a user, I should be able to...<br>
 
-navigate over pages of articles (e.g. using pagination or infinite scroll).
-navigate over pages of comments (e.g. using pagination or infinite scroll).
-view a list of all articles written by any specific user.
-post a new article to an existing topic.
-delete my own articles.
-Deployment
-There are many ways to deploy a React application. The create-react-app docs go into detail on some of the options: https://facebook.github.io/create-react-app/docs/deployment
+navigate over pages of articles (e.g. using pagination or infinite scroll).<br>
+navigate over pages of comments (e.g. using pagination or infinite scroll).<br>
+view a list of all articles written by any specific user.<br>
+post a new article to an existing topic.<br>
+delete my own articles.<br>
+Deployment<br>
+There are many ways to deploy a React application. The create-react-app docs go into detail on some of the options: https://facebook.<br>github.io/create-react-app/docs/deployment<br>
 
-We recommend Netlify. Check out the netlify-deployment.md file in this repo for a step-by-step guide!
+We recommend Netlify. Check out the netlify-deployment.md file in this repo for a step-by-step guide!<br>
 
-Extra credit - what else do you think would be good for a user to be able to do, here are a couple of suggestions:
-As a user, I should be able to see which users have been most active adding articles and comments
+Extra credit - what else do you think would be good for a user to be able to do, here are a couple of suggestions:<br>
+As a user, I should be able to see which users have been most active adding articles and comments<br>
 As a user, I should be able to sort the users by how popular they are based on an aggregation of their article and comment vote counts

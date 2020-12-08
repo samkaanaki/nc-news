@@ -20,7 +20,7 @@ class ArticlesList extends React.Component {
     const { articles, isLoading } = this.state;
 
     if (isLoading) {
-      return <h2>Sit tight. Loading articles...</h2>;
+      return <h2>Loading articles...</h2>;
     }
     return (
       <div className="all-articles">

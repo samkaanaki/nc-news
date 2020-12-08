@@ -10,9 +10,9 @@ const ArticleCard = (props) => {
         <Link to={`/articles/${article_id}`}>
           <h3>{title}</h3>
         </Link>
-
-        <p>{author}</p>
-        <p>{topic}</p>
+        <p>
+          in <u>spr/{topic}</u> by <u>u/{author}</u>
+        </p>
         <p>votes: {votes}</p>
         <p>comments: {comment_count}</p>
       </li>
