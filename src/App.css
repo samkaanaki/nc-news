@@ -91,12 +91,16 @@ h1 {
   border: solid black 1px;
   padding: 1rem;
   border-radius: 0.25rem;
-  width: 50rem;
+  width: 30rem;
   background-color: #afdedc;
 }
 
 li {
   list-style-type: none;
+}
+
+.topics-selector {
+  width: 15%;
 }
 
 #comment-input {
@@ -133,6 +137,22 @@ li {
 
 #vote-down {
   font-size: 1rem;
+}
+
+.article-votes {
+  margin-bottom: 0.5rem;
+}
+
+#thumb-vote {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+}
+
+#comment-bubble {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
 }
 
 .comment-container {

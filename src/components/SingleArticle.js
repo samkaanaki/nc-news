@@ -52,9 +52,23 @@ class SingleArticle extends React.Component {
             <br></br>
             <p>{body}</p>
             <br></br>
-            <p>
-              {votes} votes || {comment_count} comments
-            </p>
+            <div className="article-votes">
+              <img
+                src="http://clipart-library.com/new_gallery/287-2878901_pros-and-cons-png-transparent-background-transparent-background.png"
+                alt="thumbs up"
+                id="thumb-vote"
+              />
+              {votes}
+            </div>
+
+            <div className="article-comments">
+              <img
+                src="http://clipart-library.com/new_gallery/169-1690372_comment-speech-bubble-clipart-png-download-black-comment.png"
+                alt="comments logo"
+                id="comment-bubble"
+              />
+              {comment_count}
+            </div>
           </div>
           <br></br>
           <Comment />

@@ -33,7 +33,7 @@ const Header = () => {
           <hr></hr>
           <Link to="/profile">
             <img
-              src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c531.png"
+              src="https://toppng.com/uploads/preview/txt-at-master-reddit-star-wars-logo-11563175008hvulwgytoc.png"
               alt="user logo"
               id="user-logo"
             />

@@ -28,14 +28,25 @@ class ArticlesList extends React.Component {
       );
     }
     return (
-      <div className="all-articles">
-        <h2>All articles</h2>
-        <ul>
-          {articles.map((article) => {
-            return <ArticleCard key={article.article_id} {...article} />;
-          })}
-        </ul>
-      </div>
+      <>
+        <div className="all-articles-container">
+          <div className="all-articles">
+            <h2>All articles</h2>
+            <ul>
+              {articles.map((article) => {
+                return <ArticleCard key={article.article_id} {...article} />;
+              })}
+            </ul>
+          </div>
+          <div className="topics-selector">
+            <h4>Topics</h4>
+            <p>All</p>
+            <p>Coding</p>
+            <p>Cooking</p>
+            <p>Football</p>
+          </div>
+        </div>
+      </>
     );
   }
 }

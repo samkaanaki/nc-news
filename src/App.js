@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+
       <Router>
         <AllArticles path="/" />
         <SingleArticle path="/articles/:article_id" />
