@@ -39,9 +39,9 @@ class SingleArticle extends React.Component {
         <>
           <div className="single-article-container">
             <div className="votes">
-              <p id="vote-up">⬆️</p>
+              <p id="vote-up">⬆</p>
               <p id="current-votes">{votes}</p>
-              <p id="vote-down">⬇️</p>
+              <p id="vote-down">⬇</p>
             </div>
             <br></br>
             <h3>{title}</h3>
@@ -52,14 +52,6 @@ class SingleArticle extends React.Component {
             <br></br>
             <p>{body}</p>
             <br></br>
-            <div className="article-votes">
-              <img
-                src="http://clipart-library.com/new_gallery/287-2878901_pros-and-cons-png-transparent-background-transparent-background.png"
-                alt="thumbs up"
-                id="thumb-vote"
-              />
-              {votes}
-            </div>
 
             <div className="article-comments">
               <img
