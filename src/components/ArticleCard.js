@@ -19,9 +19,9 @@ const ArticleCard = (props) => {
         <Link to={`/articles/${article_id}`}>
           <h3>{title}</h3>
         </Link>
-        <p>
-          in <u>spr/{topic}</u> by <u>u/{author}</u> on{' '}
-          <u>{timeFormatter(created_at)}</u>
+        <p className="article-card-info">
+          in <u>spr/{topic}</u> by <u>u/{author}</u> on <u></u>
+          {timeFormatter(created_at)}
         </p>
         <p>votes: {votes}</p>
         <p>comments: {comment_count}</p>

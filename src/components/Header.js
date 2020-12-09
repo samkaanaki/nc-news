@@ -13,6 +13,7 @@ const Header = () => {
               id="header-logo"
             />
           </Link>
+          <hr />
           <h1>spread-it</h1>
           <hr></hr>
           <p id="waste-time">waste your life away</p>
@@ -28,6 +29,7 @@ const Header = () => {
           </div>
           <div className="header-user-info">
             <p id="welcome-user">samaki_8</p>
+
             <p id="karma">💥 8 karma</p>
           </div>
           <hr></hr>

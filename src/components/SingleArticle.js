@@ -47,7 +47,7 @@ class SingleArticle extends React.Component {
             <br></br>
             <h3>{title}</h3>
 
-            <p>
+            <p className="single-article-info">
               in <u>spr/{topic}</u> by <u>u/{author}</u> on
               <u>{timeFormatter(created_at)}</u>
             </p>
@@ -65,7 +65,7 @@ class SingleArticle extends React.Component {
             </div>
           </div>
           <br></br>
-          <Comment />
+          <Comment article_id={article_id} />
 
           <ArticleComments article_id={article_id} />
         </>
