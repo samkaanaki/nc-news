@@ -2,6 +2,7 @@ import React from 'react';
 import { getSingleArticle } from '../api';
 import Comment from '../components/Comment';
 import ArticleComments from '../components/ArticleComments';
+import { timeFormatter } from '../timeFormatter';
 
 class SingleArticle extends React.Component {
   state = {
@@ -47,7 +48,8 @@ class SingleArticle extends React.Component {
             <h3>{title}</h3>
 
             <p>
-              in <u>spr/{topic}</u> by <u>u/{author}</u> on {created_at}
+              in <u>spr/{topic}</u> by <u>u/{author}</u> on
+              <u>{timeFormatter(created_at)}</u>
             </p>
             <br></br>
             <p>{body}</p>

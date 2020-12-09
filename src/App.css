@@ -155,3 +155,19 @@ li {
   padding: 1rem;
   background-color: #afdedc;
 }
+
+.comment-info {
+  margin-bottom: 0.25rem;
+  font-size: 0.5rem;
+}
+
+#up-down-arrows {
+  height: 0.75rem;
+  width: 1rem;
+  margin-right: 0.25rem;
+}
+
+.comment-votes {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+}
