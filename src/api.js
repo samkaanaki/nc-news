@@ -29,16 +29,11 @@ export const getArticleComments = (article_id) => {
 };
 
 export const postComment = (article_id, comment) => {
-  return axios
-    .post(
-      `https://nc-news-for-frontend.herokuapp.com/api/articles/${article_id}/comments`,
-      {
-        comment
-      }
-    )
-    .then((response) => {
-      if (response.status === 201) {
-        this.setState({ success: 'yes' });
-      }
-    });
+  return axios.post(
+    `https://nc-news-for-frontend.herokuapp.com/api/articles/${article_id}/comments`,
+    {
+      body: comment,
+      username: 'jessjelly'
+    }
+  );
 };

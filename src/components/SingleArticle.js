@@ -1,6 +1,6 @@
 import React from 'react';
 import { getSingleArticle } from '../api';
-import Comment from '../components/Comment';
+
 import ArticleComments from '../components/ArticleComments';
 import { timeFormatter } from '../timeFormatter';
 
@@ -20,7 +20,7 @@ class SingleArticle extends React.Component {
     if (this.state.isLoading) {
       return (
         <>
-          <div class="loader"></div>
+          <div className="loader"></div>
           <h2>Loading article...</h2>
         </>
       );
@@ -57,7 +57,7 @@ class SingleArticle extends React.Component {
 
             <div className="article-comments">
               <img
-                src="http://clipart-library.com/new_gallery/169-1690372_comment-speech-bubble-clipart-png-download-black-comment.png"
+                src="https://lh3.googleusercontent.com/proxy/NN9FQjvTqoKy5Ax7Bgj0iojS524dGDz-0j39tzfs-_q3JSqlQemZubKuPFQ6NEaWLVVSyohtPBrtfU9maxsknY2NEcSuAQVKuX_K1AqQNp_zAEUmNdVeDUcxa01RaZyQp8h1iydcAB4AEcoq4Z7uKfcBhqMrLfy2dDhifPMc45RAsnZCi8SmClXag-BKdA"
                 alt="comments logo"
                 id="comment-bubble"
               />
@@ -65,7 +65,6 @@ class SingleArticle extends React.Component {
             </div>
           </div>
           <br></br>
-          <Comment article_id={article_id} />
 
           <ArticleComments article_id={article_id} />
         </>

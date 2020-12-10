@@ -23,7 +23,10 @@ hr {
 
 header {
   background-color: #809bce;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   margin: 0;
 }
 
@@ -113,6 +116,10 @@ li {
   width: 25rem;
   height: 5rem;
   border-radius: 0.25rem;
+}
+
+textarea {
+  resize: none;
 }
 
 #post-button {

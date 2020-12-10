@@ -10,14 +10,23 @@ class Comment extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     const { success, comment } = this.state;
-    const { article_id } = this.props;
-    postComment(article_id, comment);
+    const { article_id, addComment } = this.props;
+    postComment(article_id, comment)
+      .then((response) => {
+        if (response.status === 201) {
+          this.setState({ success: 'yes' });
+          addComment(response.data.comment);
+        }
+      })
+      .catch((err) => {
+        console.dir(err);
+      });
   };
 
   handleChange = ({ target }) => {
-    console.log(target);
+    const { value } = target;
     this.setState(() => {
-      return {};
+      return { comment: value };
     });
   };
 
@@ -29,12 +38,13 @@ class Comment extends React.Component {
           <p>Commenting as samaki_8</p>
           <br></br>
           <form onSubmit={this.handleSubmit}>
-            <input
+            <textarea
               required
               type="text"
               id="comment-input"
               placeholder="Let OP know how much you hate them here"
               value={this.state.comment}
+              onChange={this.handleChange}
             />
             <button id="post-button" type="submit">
               Post

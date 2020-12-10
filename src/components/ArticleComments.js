@@ -1,6 +1,7 @@
 import React from 'react';
-import { getArticleComments } from '../api';
+import { getArticleComments, postComment } from '../api';
 import CommentCard from '../components/CommentCard';
+import Comment from '../components/Comment';
 
 class ArticleComments extends React.Component {
   state = {
@@ -9,26 +10,42 @@ class ArticleComments extends React.Component {
   };
 
   componentDidMount() {
-    getArticleComments(this.props.article_id).then((comments) => {
+    getArticleComments(this.props.article_id).then(({ comments }) => {
       this.setState({ comments, isLoading: false });
     });
   }
+
+  addComment = (commentToAdd) => {
+    // postComment(this.props.article_id, this.props.comment).then();
+    this.setState((currState) => {
+      console.log(currState);
+      return {
+        comments: [commentToAdd, ...currState.comments]
+      };
+    });
+  };
 
   render() {
     if (this.state.isLoading) {
       return (
         <>
-          <div class="loader"></div>
+          <div className="loader"></div>
           <h2>Loading comments...</h2>
         </>
       );
     } else {
       return (
-        <ul className="article-comments-container">
-          {this.state.comments.comments.map((comment) => {
-            return <CommentCard key={comment.comment_id} {...comment} />;
-          })}
-        </ul>
+        <>
+          <Comment
+            article_id={this.props.article_id}
+            addComment={this.addComment}
+          />
+          <ul className="article-comments-container">
+            {this.state.comments.map((comment) => {
+              return <CommentCard key={comment.comment_id} {...comment} />;
+            })}
+          </ul>
+        </>
       );
     }
   }

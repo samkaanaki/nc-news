@@ -28,7 +28,7 @@ const Header = () => {
             </select>
           </div>
           <div className="header-user-info">
-            <p id="welcome-user">samaki_8</p>
+            <p id="welcome-user">jessjelly</p>
 
             <p id="karma">💥 8 karma</p>
           </div>
