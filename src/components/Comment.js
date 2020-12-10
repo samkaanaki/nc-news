@@ -14,7 +14,7 @@ class Comment extends React.Component {
     postComment(article_id, comment)
       .then((response) => {
         if (response.status === 201) {
-          this.setState({ success: 'yes' });
+          this.setState({ success: 'yes', comment: '' });
           addComment(response.data.comment);
         }
       })
