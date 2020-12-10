@@ -56,7 +56,7 @@ class SingleArticle extends React.Component {
 
             <div className="article-comments">
               <img
-                src="https://lh3.googleusercontent.com/proxy/NN9FQjvTqoKy5Ax7Bgj0iojS524dGDz-0j39tzfs-_q3JSqlQemZubKuPFQ6NEaWLVVSyohtPBrtfU9maxsknY2NEcSuAQVKuX_K1AqQNp_zAEUmNdVeDUcxa01RaZyQp8h1iydcAB4AEcoq4Z7uKfcBhqMrLfy2dDhifPMc45RAsnZCi8SmClXag-BKdA"
+                src="https://assets.dryicons.com/uploads/icon/svg/6145/0beebf51-beba-482d-a5cf-e1b7039ffec6.svg"
                 alt="comments logo"
                 id="comment-bubble"
               />

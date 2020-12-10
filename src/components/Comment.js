@@ -16,6 +16,9 @@ class Comment extends React.Component {
         if (response.status === 201) {
           this.setState({ success: 'yes', comment: '' });
           addComment(response.data.comment);
+          setTimeout(() => {
+            this.setState({ success: '' });
+          }, 3000);
         }
       })
       .catch((err) => {

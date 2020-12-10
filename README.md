@@ -27,14 +27,14 @@ Before moving onto the 'if time' and 'extra credit' sections of this readme, fol
 As a user, I should be able to...
 
 ✅ view a list of all articles <br>
-view a page for each topic with a list of related articles.<br>
+✅ view a page for each topic with a list of related articles.<br>
 ✅ view an individual article.<br>
 ✅ view an individual article's comments.<br>
 sort articles by:<br>
 date created<br>
 comment_count<br>
 votes<br>
-post a new comment to an existing article (as a default logged in user. e.g. 'jessjelly').<br>
+✅ post a new comment to an existing article (as a default logged in user. e.g. 'jessjelly').<br>
 delete my own comments (as a default logged in user. e.g. 'jessjelly').<br>
 vote on an article and immediately see the change.<br>
 vote on a comment and immediately see the change.<br>
