@@ -4,8 +4,8 @@ class Nav extends React.Component {
   render() {
     return (
       <nav className="topics-filter">
-        <select onChange={this.props.updateTopic}>
-          <option>Choose a topic</option>
+        <select onChange={this.props.updateTopic} className="topics-dropdown">
+          <option>Topics</option>
           <option value="">All</option>
           <option value="coding">Coding</option>
           <option value="cooking">Cooking</option>

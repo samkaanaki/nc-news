@@ -56,7 +56,7 @@ class Comment extends React.Component {
             </button>
           </form>
           {this.state.success === 'yes' ? (
-            <p>Successfully posted ✅</p>
+            <p>Successfully posted ✔️</p>
           ) : this.state.success === 'no' ? (
             <p>Unable to post ❌</p>
           ) : null}

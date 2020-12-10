@@ -55,8 +55,8 @@ class ArticlesList extends React.Component {
         <Nav updateTopic={this.updateTopic} />
         <div className="all-articles-container">
           <div className="all-articles">
-            <h2>All articles</h2>
-            <ul>
+            <h2 className="current-article-header">All articles</h2>
+            <ul className="all-articles-list">
               {articles.map((article) => {
                 return <ArticleCard key={article.article_id} {...article} />;
               })}
