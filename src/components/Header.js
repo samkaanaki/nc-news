@@ -24,6 +24,13 @@ class Header extends React.Component {
             <hr></hr>
             <p id="waste-time">waste your life away</p>
             <hr></hr>
+            <div className="search-bar">
+              <input
+                type="search"
+                id="header-search"
+                placeholder="Search spread-it"
+              />
+            </div>
 
             <div className="header-user-info">
               <p id="welcome-user">jessjelly</p>
