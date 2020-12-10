@@ -20,11 +20,12 @@ class ArticlesList extends React.Component {
 
   updateTopic = (event) => {
     const { value } = event.target;
-    console.log(value);
+
     this.fetchArticlesByTopic(value).then((response) => {});
   };
 
   fetchArticlesByTopic = (topic) => {
+    console.log(topic);
     return axios
       .get(`https://nc-news-for-frontend.herokuapp.com/api/articles/`, {
         params: {
