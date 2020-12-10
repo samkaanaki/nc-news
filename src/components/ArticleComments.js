@@ -29,8 +29,10 @@ class ArticleComments extends React.Component {
     if (this.state.isLoading) {
       return (
         <>
-          <div className="loader"></div>
-          <h2>Loading comments...</h2>
+          <div className="loader">
+            {' '}
+            <h2>Loading comments...</h2>
+          </div>
         </>
       );
     } else {

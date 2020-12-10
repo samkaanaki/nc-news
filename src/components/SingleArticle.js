@@ -20,7 +20,6 @@ class SingleArticle extends React.Component {
     if (this.state.isLoading) {
       return (
         <>
-          <div className="loader"></div>
           <h2>Loading article...</h2>
         </>
       );

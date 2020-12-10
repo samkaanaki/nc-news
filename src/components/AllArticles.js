@@ -1,4 +1,6 @@
 import React from 'react';
+import Nav from '../components/Nav';
+import axios from 'axios';
 
 import { getArticles } from '../api';
 
@@ -16,19 +18,40 @@ class ArticlesList extends React.Component {
     });
   }
 
+  updateTopic = (event) => {
+    const { value } = event.target;
+    console.log(value);
+    this.fetchArticlesByTopic(value).then((response) => {});
+  };
+
+  fetchArticlesByTopic = (topic) => {
+    return axios
+      .get(`https://nc-news-for-frontend.herokuapp.com/api/articles/`, {
+        params: {
+          topic
+        }
+      })
+      .then((response) => {
+        this.setState({ articles: response.data.articles });
+        console.log(this.state);
+      });
+  };
+
   render() {
     const { articles, isLoading } = this.state;
 
     if (isLoading) {
       return (
         <>
-          <div class="loader"></div>
-          <h2>Loading articles...</h2>
+          <div class="loader">
+            <h2>Loading articles...</h2>
+          </div>
         </>
       );
     }
     return (
       <>
+        <Nav updateTopic={this.updateTopic} />
         <div className="all-articles-container">
           <div className="all-articles">
             <h2>All articles</h2>
@@ -37,13 +60,6 @@ class ArticlesList extends React.Component {
                 return <ArticleCard key={article.article_id} {...article} />;
               })}
             </ul>
-          </div>
-          <div className="topics-selector">
-            <h4>Topics</h4>
-            <p>All</p>
-            <p>Coding</p>
-            <p>Cooking</p>
-            <p>Football</p>
           </div>
         </div>
       </>

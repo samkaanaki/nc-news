@@ -37,3 +37,14 @@ export const postComment = (article_id, comment) => {
     }
   );
 };
+
+export const getArticlesByTopic = (topic) => {
+  return axios
+    .get(
+      `https://nc-news-for-frontend.herokuapp.com/api/articles/?topic=${topic}`
+    )
+    .then(({ data }) => {
+      console.log(data);
+      return data;
+    });
+};
