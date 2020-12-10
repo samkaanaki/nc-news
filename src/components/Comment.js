@@ -35,7 +35,9 @@ class Comment extends React.Component {
       <>
         <div className="comment-container">
           <h3>Join the conversation</h3>
-          <p>Commenting as samaki_8</p>
+          <p id="commenting-as">
+            Commenting as <u>u/jessjelly</u>
+          </p>
           <br></br>
           <form onSubmit={this.handleSubmit}>
             <textarea

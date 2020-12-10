@@ -41,8 +41,6 @@ const Header = () => {
             />
           </Link>
         </div>
-
-        <hr />
       </header>{' '}
     </div>
   );
