@@ -1,5 +1,6 @@
 import React from 'react';
 import { getSingleArticle } from '../api';
+import axios from 'axios';
 
 import ArticleComments from '../components/ArticleComments';
 import { timeFormatter } from '../timeFormatter';
@@ -15,6 +16,29 @@ class SingleArticle extends React.Component {
       this.setState({ article, isLoading: false });
     });
   }
+
+  increaseArticleVote = (article_id) => {
+    this.upvoteArticle();
+    axios.patch(
+      `https://nc-news-for-frontend.herokuapp.com/api/articles/${this.props.article_id}`,
+      {
+        inc_votes: 1
+      }
+    );
+  };
+
+  upvoteArticle = () => {
+    this.setState((currentState) => {
+      const newState = {
+        article: {
+          ...currentState.article,
+          votes: currentState.article.votes + 1
+        }
+      };
+      console.log('clicked');
+      return newState;
+    });
+  };
 
   render() {
     if (this.state.isLoading) {
@@ -33,15 +57,17 @@ class SingleArticle extends React.Component {
         body,
         created_at,
         article_id
-      } = this.state.article.article;
+      } = this.state.article;
 
       return (
         <>
           <div className="single-article-container">
             <div className="votes">
-              <p id="vote-up">⬆</p>
+              <button id="-article-vote-up" onClick={this.increaseArticleVote}>
+                ⬆
+              </button>
               <p id="current-votes">{votes}</p>
-              <p id="vote-down">⬇</p>
+              <button id="article-vote-down">⬇</button>
             </div>
             <br></br>
             <h3>{title}</h3>

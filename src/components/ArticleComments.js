@@ -1,5 +1,5 @@
 import React from 'react';
-import { getArticleComments, postComment } from '../api';
+import { getArticleComments } from '../api';
 import CommentCard from '../components/CommentCard';
 import Comment from '../components/Comment';
 
@@ -10,15 +10,13 @@ class ArticleComments extends React.Component {
   };
 
   componentDidMount() {
-    getArticleComments(this.props.article_id).then(({ comments }) => {
+    getArticleComments(this.props.article_id).then((comments) => {
       this.setState({ comments, isLoading: false });
     });
   }
 
   addComment = (commentToAdd) => {
-    // postComment(this.props.article_id, this.props.comment).then();
     this.setState((currState) => {
-      console.log(currState);
       return {
         comments: [commentToAdd, ...currState.comments]
       };

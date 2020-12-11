@@ -14,7 +14,7 @@ export const getSingleArticle = (article_id) => {
       `https://nc-news-for-frontend.herokuapp.com/api/articles/${article_id}`
     )
     .then(({ data }) => {
-      return data;
+      return data.article;
     });
 };
 
@@ -24,7 +24,7 @@ export const getArticleComments = (article_id) => {
       `https://nc-news-for-frontend.herokuapp.com/api/articles/${article_id}/comments`
     )
     .then(({ data }) => {
-      return data;
+      return data.comments;
     });
 };
 

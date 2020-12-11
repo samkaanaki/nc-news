@@ -25,7 +25,6 @@ class ArticlesList extends React.Component {
   };
 
   fetchArticlesByTopic = (topic) => {
-    console.log(topic);
     return axios
       .get(`https://nc-news-for-frontend.herokuapp.com/api/articles/`, {
         params: {
@@ -44,7 +43,7 @@ class ArticlesList extends React.Component {
     if (isLoading) {
       return (
         <>
-          <div class="loader">
+          <div className="loader">
             <h2>Loading articles...</h2>
           </div>
         </>
