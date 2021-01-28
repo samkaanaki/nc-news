@@ -28,7 +28,7 @@ class SingleArticle extends React.Component {
   };
 
   decreaseArticleVote = (article_id) => {
-    this.upvoteArticle();
+    this.downvoteArticle();
     axios.patch(
       `https://nc-news-for-frontend.herokuapp.com/api/articles/${this.props.article_id}`,
       {
