@@ -9,7 +9,7 @@ class Comment extends React.Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    const { success, comment } = this.state;
+    const { comment } = this.state;
     const { article_id, addComment } = this.props;
     postComment(article_id, comment)
       .then((response) => {
@@ -47,7 +47,7 @@ class Comment extends React.Component {
               required
               type="text"
               id="comment-input"
-              placeholder="Let OP know how much you hate them here"
+              placeholder="What are your thoughts?"
               value={this.state.comment}
               onChange={this.handleChange}
             />

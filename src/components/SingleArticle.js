@@ -27,6 +27,16 @@ class SingleArticle extends React.Component {
     );
   };
 
+  decreaseArticleVote = (article_id) => {
+    this.upvoteArticle();
+    axios.patch(
+      `https://nc-news-for-frontend.herokuapp.com/api/articles/${this.props.article_id}`,
+      {
+        inc_votes: 1
+      }
+    );
+  };
+
   upvoteArticle = () => {
     this.setState((currentState) => {
       const newState = {
@@ -35,12 +45,26 @@ class SingleArticle extends React.Component {
           votes: currentState.article.votes + 1
         }
       };
-      console.log('clicked');
+
+      return newState;
+    });
+  };
+
+  downvoteArticle = () => {
+    this.setState((currentState) => {
+      const newState = {
+        article: {
+          ...currentState.article,
+          votes: currentState.article.votes - 1
+        }
+      };
+
       return newState;
     });
   };
 
   render() {
+    console.log(this.state);
     if (this.state.isLoading) {
       return (
         <>
@@ -67,7 +91,9 @@ class SingleArticle extends React.Component {
                 ⬆
               </button>
               <p id="current-votes">{votes}</p>
-              <button id="article-vote-down">⬇</button>
+              <button id="article-vote-down" onClick={this.decreaseArticleVote}>
+                ⬇
+              </button>
             </div>
             <br></br>
             <h3>{title}</h3>
